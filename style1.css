@@ -207,4 +207,22 @@ video{
     height: 30vh;
     background-color: green;
 }
+.logout-btn{
+    /* width: 6vw; */
+    padding: 13px;
+    height: 4vh;
+    border: none;
+    /* background-color: #4ca4a27b; */
+    background-color: rgba(126, 247, 207, 0.093);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    color: white;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logout-btn:hover{
+    background-color: #4ea8a6;
+}
 

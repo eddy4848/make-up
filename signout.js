@@ -23,7 +23,7 @@ const firebaseConfig = {
 
     }
     else {
-        alert("you have been logged out");
+        // alert("you have been logged out");
         // window.location = "l.html"
     }
   })
