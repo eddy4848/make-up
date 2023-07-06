@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png"> -->
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./new.css">
+
+        <title>Responsive Website Travel</title>
+    </head>
+<body>
+     <header class="header" id="header">
+            <nav class="nav container">
+                
+                <a href="#" class="nav__logo">Travel</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">Places</a>
+                        </li>
+                    </ul>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+                <!-- <img src="./img/30fb3c168853635.6441b7092c408.jpg" alt="" class="home__img"> -->
+                <video autoplay loop muted src="./video/video (720p).mp4" class="home__img"></video>
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Discover your place</span>
+                        <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Beaches</b></h1>
+                        <a href="#" class="button">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 best places to visit</span>
+                            <a href="" class="button1 button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="./img/75c860c103a3417714a759f893ba4aa0.jpeg" alt="" class="home__info-img">
+
+                            <!-- <video muted autoplay loop class="home__info-img" src="./video/eye.mp4"></video> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">More Information <br> About The Best Beaches</h2>
+                        <p class="about__description">You can find the most beautiful and pleasant places at the best 
+                            prices with special discounts, you choose the place we will guide you all the way to wait, get your 
+                            place now.
+                        </p>
+                        <a href="#" class="button">Reserve a place</a>
+                    </div>
+                     <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="./img/pexels-photo-2536009.webp" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="./img/pink.jpeg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER1 ====================-->
+
+                       <div class="discover__card swiper-slide">
+                        <img src="./img/pexels-photo-2536009.webp" alt="" class="discover__img" >
+                        <div class="discover__data">
+                                <h2 class="discover__title">Bali</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                       </div> 
+                        <!--==================== DISCOVER2 ====================-->
+
+                       <div class="discover__card swiper-slide">
+                        <img src="./img/GettyImages-11892073561-49df82b427e3446e9554cbfb834372a1.jpeg" alt="" class="discover__img" >
+                        <div class="discover__data">
+                                <h2 class="discover__title">Bali</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                       </div> 
+                        <!--==================== DISCOVER3 ====================-->
+
+                      <div class="discover__card swiper-slide">
+                        <img src="./img/GettyImages-11892073561-49df82b427e3446e9554cbfb834372a1.jpeg" alt="" class="discover__img" >
+                        <div class="discover__data">
+                                <h2 class="discover__title">Bali</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                       </div> 
+                        <!--==================== DISCOVER4 ====================-->
+
+                      <div class="discover__card swiper-slide">
+                        <img src="./img/GettyImages-11892073561-49df82b427e3446e9554cbfb834372a1.jpeg" alt="" class="discover__img" >
+                        <div class="discover__data">
+                                <h2 class="discover__title">Bali</h2>
+                                <span class="discover__description">24 tours available</span>
+                            </div>
+                       </div> 
+                    </div>
+                </div>
+            </section>
+
+
+             <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                 <h2 class="section__title">With Our Experience <br> We Will Serve You</h2>
+
+                 <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">
+                                20
+                            </h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">
+                                20
+                            </h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">
+                                20
+                            </h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="./img/Beauty Beauty Website in Light Pink Red Clean Neutrals Style.png" alt="" class="experience__img-one">
+                        </div>
+                        <div class="experience__overlay">
+                            <img src="./img/Beauty Beauty Website in Light Pink Red Clean Neutrals Style.png" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                 </div>
+            </section>
+    </main>
+    <!--=============== SWIPER JS ===============-->
+        <script src="./swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

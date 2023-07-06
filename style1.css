@@ -31,6 +31,12 @@ header{
         z-index: 1;
         width: 100%;
         position: fixed;
+        top: 0;
+        left: 0;
+}
+.ns{
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -180,7 +186,7 @@ header{
 }
 .text{
    
-    color: black;
+    color: white;
         /* font-size: 0.9rem; */
         font-size: clamp(1rem, 4vw, 3rem);
         font-weight: 500;
@@ -188,25 +194,32 @@ header{
     
 }
 .tet{
-    position: relative;
-        top: 150px;
+    /* position: relative; */
+        top: -500px;
         background-color: pink;
         width: 100%;
+        text-align: center;
+        font-weight: 1200;
+        margin-bottom: 40px;
+        /* position:sticky; */
         /* height: 20vh; */
+        
+        
 }
 .bg-video{
     width: 100%;
+    height: 100vh;
 }
 video{
-    width: 100%;
-    max-width: 100%;
+    /* width: 100vw; */
+    /* max-width: 100%; */
+    /* height: 100; */
+    filter: brightness(70%);
+    /* max-height: 100%; */
+    
 }
 
-.ii{
-    width: 100%;
-    height: 30vh;
-    background-color: green;
-}
+
 .logout-btn{
     /* width: 6vw; */
     padding: 13px;
@@ -225,4 +238,69 @@ video{
 .logout-btn:hover{
     background-color: #4ea8a6;
 }
+.about-text{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+.about-img{
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+}
+.ii {
+    width: 100%;
+    height: 50vh;
+    /* background-color: green; */
+    display: flex;
+    margin-top: -10px
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+
+}
+
+.content h1 {
+    font-size: 120px;
+    color: #0c0c0c;
+    font-weight: 600;
+
+}
+
+.back-vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio : 16/9) {
+    .back-vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio : 16/9) {
+    .back-vid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
 
