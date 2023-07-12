@@ -17,7 +17,7 @@
 
         <title>Responsive Website Travel</title>
     </head>
-<body>
+<body><!--==================== NAV-BAR ====================-->
      <header class="header" id="header">
             <nav class="nav container">
                 
@@ -54,7 +54,7 @@
         </header>
 
     <main class="main">
-        <!-- HOME -->
+        <!--==================== HOME ====================-->
         <section class="home" id="home">
                 <!-- <img src="./img/30fb3c168853635.6441b7092c408.jpg" alt="" class="home__img"> -->
                 <video autoplay loop muted src="./video/video (720p).mp4" class="home__img"></video>
@@ -270,6 +270,108 @@
                     </div>
                 </div>
             </section>
+
+            <!--==================== BOOK APPOINTMENT ====================-->
+            <section class="book section" id="book">
+                <h2 class="section__title">Book An Appointment</h2>
+
+                <div class="about__container container grid">
+                    <div class="about__data">
+                       <div class="formm">
+        <form method="post">
+            <div class="con">
+            <input type="text" name="Name" placeholder="Full Name" required id="name" autocomplete="off" class="input1">
+            </div>
+            <div class="con">
+            <input type="text" name="Email" placeholder="Email" required autocomplete="off" id="email" class="input1">
+            </div>
+            <div class="con">
+            <input type="text" placeholder="suject" id="subject" autocomplete="off" class="input1">
+            </div>
+            <div class="con">
+            <input type="number" placeholder="Phone" id="number" autocomplete="off" class="input1">
+            </div>
+
+            <div class="con">
+            <input type="date" placeholder="Phone" id="date" autocomplete="off" class="input1">
+            </div>
+            
+            <div class="con2">
+            <textarea name="Message" placeholder="Message" required id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" id="btn" class="button" onclick="openPopup()">Send</button>
+            
+            <div class="popup" id="popup">
+            <img src="./img/404-tick.png" alt="">
+            <h2>Thank You</h2>
+            <p>Your Details has been successfully submitted. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
+        </form>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup")
+
+        function openPopup (){
+            popup.classList.add("open-popup");
+        }
+        function closePopup (){
+            popup.classList.remove("open-popup");
+        }
+
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        var name = document. getElementById('name').value;
+        var email = document. getElementById('email').value;
+        var subject = document. getElementById('subject').value;
+        var message = document. getElementById('message').value;
+        var number = document. getElementById('number').value;
+        var date = document. getElementById('date').value;
+        var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' +subject + '<br/> number: ' + number + '<br/> date ' + date + '<br/> message: '+ message;
+
+
+
+                    Email.send({
+                SecureToken : "532cfee4-be26-4e0e-ac30-abc5830554f1",
+                To : 'airspress4@gmail.com',
+                From : "samuelemmanuel11111@gmail.com",
+                Subject : "contact message",
+                Body: body
+                
+                
+            }).then(
+              message => alert(message)
+              
+
+              
+              
+            );
+            
+        
+                })
+</script>
+                       
+                    </div>
+                     <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="./img/pexels-photo-2536009.webp" alt="" class="about__img-one">
+                        </div>
+
+                        <div type="submit"  class="about__img-overlay">
+                            <img src="./img/pink.jpeg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
              <!--==================== PLACES ====================-->
              <section class="place section" id="place">
@@ -505,6 +607,8 @@
             
             </div>
         </footer>
+
+        
 
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">

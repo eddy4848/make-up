@@ -185,3 +185,4 @@ sr.reveal(`.about__img,
     origin: 'right',
     interval: 100,
 })
+
