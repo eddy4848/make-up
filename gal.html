@@ -10,7 +10,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="./swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./gal.css">
@@ -60,7 +60,7 @@
 
         <section class="home" id="home">
                 <!-- <img src="./img/30fb3c168853635.6441b7092c408.jpg" alt="" class="home__img"> -->
-                <video autoplay loop muted src="./video/video (720p).mp4" class="home__img"></video>
+                <video autoplay loop muted src="./video/eye.mp4" class="home__img"></video>
 
                 <div class="home__container container grid">
                     <div class="home__data">
@@ -102,9 +102,10 @@
 
             <div class="container2">
 
-                <div class="video-container2">
+                <div class="video-container2" id="video-container2">
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <!-- <video src="./video/v15.mp4"  ></video> -->
+                        <img src="./video/v15.jpg" alt="">
                     </div>
                     <div class="video2">
                         <video src="./video/v2.mp4"  ></video>
@@ -125,40 +126,41 @@
                         <video src="./video/v7.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v8.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v9.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v10.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v11.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v12.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v13.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v14.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v16.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <!-- <video src="./video/v17.mp4"  ></video> -->
+                        <img src="./video/v17.jpg" alt="">
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v18.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v19.mp4"  ></video>
                     </div>
                     <div class="video2">
-                        <video src="./video/v1.mp4"  ></video>
+                        <video src="./video/v20.mp4"  ></video>
                     </div>
                 
 
@@ -183,6 +185,22 @@
             }));
 
            </script> 
+           <script>
+
+            var video = document.querySelectorAll('img')
+
+            video.forEach(play => play.addEventListener('click', () =>{
+                play.classList.toggle('active');
+
+                if(play.paused){
+                    play.play();
+                }else{
+                    play.pause();
+                    play.currentTime = 0
+                }
+            }));
+
+           </script> 
 
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
@@ -190,7 +208,7 @@
         </a>
 
         <!--=============== SCROLL REVEAL===============-->
-        <script src="./scrollreveal.min.js"></script>
+        <script src="./swiper-bundle.min.css"></script>
         
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>

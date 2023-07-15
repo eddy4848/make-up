@@ -12,8 +12,6 @@
 
 .video-container2 .video2{
     height: 25rem;
-    /* width: 15rem; */
-    background-color: red;
     margin:0.7rem;
     /* box-shadow: 0.rem 1rem rgba(0,0,0,.5); */
     overflow: hidden;
@@ -26,11 +24,28 @@
    outline: none;
    border: none;
    cursor: pointer;
+   /* transition:0.6s; */
 }
 
 .video-container2 .video2 video:hover{
-    transition: .2sw linear;
-    transform: scale(1.3);
+    transition: .1sw linear;    
+    transform: scale(1.1);
+    filter: grayscale(10%);
+}
+.video-container2 .video2 img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   /* transition:0.6s; */
+}
+
+.video-container2 .video2 img:hover{
+    transition: .1sw linear;    
+    transform: scale(1.1);
+    filter: grayscale(10%);
 }
 
 
@@ -46,19 +61,44 @@
     border-radius: 20px;
 
 }
+@media screen and (max-width:600px) {
+    .video-container2 .video2 .active{
+        height: 60vh;
+            width: 50%;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .video-container2 .video2 .active{
+        height: 50vh;
+            width: 80%;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .video-container2 .video2 .active{
+        height: 50vh;
+            width: 80%;
+    }
+    
+}
 
+@media screen and (max-width:800px) {
+    .video-container2 .video2 .active{
+        height: 50vh;
+            width: 85%;
+    }
+    
+}
 .video-container2 .video2 .active:hover{
         transition:none;
             transform: translate(-50%, -50%) scale(1);
 }
 
 .container2{
-    max-width: 1200px;
+    max-width: 1500px;
     padding-top: 90px
 }
-
-
-
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
@@ -80,7 +120,7 @@
     --text-color: hsl(var(--hue-color), 24%, 35%);
     --text-color-light: hsl(var(--hue-color), 8%, 60%);
     --input-color: hsl(var(--hue-color), 24%, 97%);
-    --body-color: hsl(var(--hue-color), 100%, 99%);
+    --body-color: rgba(150, 148, 148, 0.135);
     --white-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
@@ -202,39 +242,6 @@ video {
     height: auto;
 }
 
-
-/* @media screen and (min-width:337px) {
-    .home__info-img {
-            max-width: 100%;
-            height: auto;
-            width: 220px;
-        }
-}
-
-@media screen and (min-width:427px) {
-    .home__info-img {
-            max-width: 100%;
-            height: auto;
-            width: 270px;
-        }
-}
-@media screen and (min-width:557px) {
-    .home__info-img {
-            max-width: 100%;
-            height: auto;
-            width: 300px;
-        }
-}
-@media screen and (min-width:1007px) {
-    .home__info-img {
-            max-width: 100%;
-            height: auto;
-            width: 500px;
-        }
-} */
-
-
-
 button,
 input {
     border: none;
@@ -325,7 +332,7 @@ input {
         top: 0;
         right: -100%;
         width: 50%;
-        /* height: 100%; */
+        height: 100vh;
         box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
         padding: 4rem;
         transition: .4s;
