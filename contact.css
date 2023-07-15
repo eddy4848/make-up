@@ -111,3 +111,15 @@ textarea{
 .popup button:hover{
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.295);
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccc {
+    /* background-color: #722e0c; */
+    height: 50vh;
+    width: 100%;
+}

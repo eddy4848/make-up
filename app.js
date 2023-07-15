@@ -174,7 +174,7 @@ sr.reveal(`.about__data,
     origin: 'left',
 })
 sr.reveal(`.subscribe__form, 
-           .footer__data, .footer__rights`,{
+           .footer__data, .footer__rights, .wrapperp`,{
             
     origin: 'bottom',
 })
