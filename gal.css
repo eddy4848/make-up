@@ -17,6 +17,7 @@
     overflow: hidden;
     border-radius: 1rem;
 }
+
 .video-container2 .video2 video{
    height: 100%;
    width: 100%;
@@ -666,6 +667,7 @@ input {
     right: 1rem;
     bottom: -1rem;
     padding: 1rem 1.5rem;
+    display: none;
 }
 
 .video__button-icon {
@@ -1451,16 +1453,23 @@ span.text {
 }
 
 .signup_btn {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 20px;
     color: rgb(5, 122, 5);
-    /* margin-top:10px */
 }
 
-;
+
+
+
+.logo-img {
+    width: 170px;
+}
+
+
+
 
 
 /* .container2 .heading{

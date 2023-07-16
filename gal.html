@@ -23,20 +23,20 @@
      <header class="header" id="header">
             <nav class="nav container">
                 
-                <a href="./new.html" class="nav__logo">Travel</a>
+                <a href="./new.html" class="nav__logo"><img class="logo-img" src="./img/image-removebg-preview (7).png" alt=""></a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="./new.html" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link active-link">Home</a>
                         </li>
+                        
+                        
                         <li class="nav__item">
-                            <a href="./new.html" class="nav__link">About</a>
+                            <a href="#book" class="nav__link active-link">Book</a>
                         </li>
+                        
                         <li class="nav__item">
-                            <a href="./new.html" class="nav__link">Discover</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./new.html" class="nav__link">Places</a>
+                            <a href="#gal" class="nav__link">Gallary</a>
                         </li>
                         <button class="signup_btn" id="signout">signout</button>
                     </ul>
@@ -64,28 +64,28 @@
 
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__data-subtitle">Discover your place</span>
-                        <h1 class="home__data-title">Explore The <br> Best <b>Beautiful <br> Beaches</b></h1>
-                        <a href="#" class="button">Explore</a>
+                       <span class="home__data-subtitle">Unleash Your Inner Beauty</span>
+                        <h1 class="home__data-title">Discover <br>Your <b> Perfect <br>  Palette</b></h1>
+                        <a href="#book" class="button">book now</a>
 
                     </div>
 
                     <div class="home__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/turquoisetouches/" target="_blank" class="home__social-link">
                             <i class="ri-facebook-box-fill"></i>
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/turquoisetouches/" target="_blank" class="home__social-link">
                             <i class="ri-instagram-fill"></i>
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/turquoisetouches/" target="_blank" class="home__social-link">
                             <i class="ri-twitter-fill"></i>
                         </a>
                     </div>
 
                     <div class="home__info">
                         <div>
-                            <span class="home__info-title">5 best places to visit</span>
-                            <a href="https://youtu.be/ErPVxYYwxHM" class="button1 button--flex button--link home__info-button">
+                            <span class="home__info-title">5 best makeup</span>
+                            <a href="" class="button1 button--flex button--link home__info-button">
                                 More <i class="ri-arrow-right-line"></i>
                             </a>
                         </div>
@@ -100,7 +100,18 @@
             </section>
    
 
-            <div class="container2">
+            <div class="container2" id="gal">
+
+
+                <div class="video__content">
+                        <video id="video-file">
+                            <source src="./video/" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
 
                 <div class="video-container2" id="video-container2">
                     <div class="video2">
@@ -169,6 +180,9 @@
                 </div>
             </div>
 
+
+
+
            <script>
 
             var video = document.querySelectorAll('video')
@@ -201,6 +215,94 @@
             }));
 
            </script> 
+
+
+           <!--==================== BOOK APPOINTMENT ====================-->
+            <section class="book section" id="book">
+                <h2 class="section__title">Book An Appointment</h2>
+
+                <div class="about__container container grid">
+                    <div class="about__data">
+                       <div class="formm">
+        <form method="post">
+            <div class="con">
+            <input type="text" name="Name" placeholder="Full Name" required id="name" autocomplete="off" class="input1">
+            </div>
+            <div class="con">
+            <input type="text" name="Email" placeholder="Email" required autocomplete="off" id="email" class="input1">
+            </div>
+            <div class="con">
+            <input type="text" placeholder="suject" id="subject" autocomplete="off" class="input1">
+            </div>
+            <div class="con">
+            <input type="number" placeholder="Phone" id="number" autocomplete="off" class="input1">
+            </div>
+
+            <div class="con">
+            <input type="date" placeholder="Phone" id="date" autocomplete="off" class="input1">
+            </div>
+            
+            <div class="con2">
+            <textarea name="Message" placeholder="Message" required id="message" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" id="btn" class="button" onclick="openPopup()">Send</button>
+
+
+        </form>
+    </div>
+
+    
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function(e){
+        e.preventDefault()
+        var name = document. getElementById('name').value;
+        var email = document. getElementById('email').value;
+        var subject = document. getElementById('subject').value;
+        var message = document. getElementById('message').value;
+        var number = document. getElementById('number').value;
+        var date = document. getElementById('date').value;
+        var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' +subject + '<br/> number: ' + number + '<br/> date ' + date + '<br/> message: '+ message;
+
+
+
+                    Email.send({
+                SecureToken : "532cfee4-be26-4e0e-ac30-abc5830554f1",
+                To : 'fabricut8@gmail.com',
+                From : "samuelemmanuel11111@gmail.com",
+                Subject : "contact message",
+                Body: body
+                
+                
+            }).then(
+              message => alert(message)
+              
+
+              
+              
+            );
+            
+        
+                })
+</script>
+                       
+                    </div>
+                     <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="./img/bride3.webp" alt="" class="about__img-one">
+                        </div>
+
+                        <div type="submit"  class="about__img-overlay">
+                            <!-- <img src="./img/bride1.jpeg" alt="" class="about__img-two"> -->
+                            <!-- <video autoplay src="./video/v5.mp4" class="about__img-two></video> -->
+                            <video src="./video/v5.mp4" muted autoplay loop class="about__img-one" ></video>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">

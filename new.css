@@ -734,6 +734,9 @@ input {
 
 .footer__link:hover {
     color: var(--title-color);
+    transition: all ease-in-out 0.5s;
+    /* transition: all ease-in-out 0.3s; */
+    transform: translateY(50px);
 }
 
 .footer__rights {
@@ -1327,4 +1330,16 @@ span.text {
   color: rgb(5, 122, 5);
 };
 
+
+.about__description span{
+    color: red;
+}
+
+.sponsor__img:hover{
+    transform: translateY(8px);
+    transition: all ease-in-out 0.5s;
+}
+.logo-img{
+    width:170px;
+}
 
