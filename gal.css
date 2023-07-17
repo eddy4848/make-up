@@ -1529,3 +1529,39 @@ span.text {
     transition: none;
     transform: translate(-50%, -50%) scale(1);
 }
+
+
+
+ul li ul.dropdown {
+    /* width: 100vw;   */
+    height: 12vh;
+
+    background-color: rgba(15, 101, 101, 0.633);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    transition: all ease-in-out 4s;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    transition: all ease-in-out 4s;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    transition: all ease-in-out 4s;
+}
+
+#user {
+    color: white;
+}
